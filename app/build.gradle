@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'br.edu.odontoagora'
+    compileSdk { version = release(37) { minorApiLevel = 0 } }
+    defaultConfig {
+        applicationId 'br.edu.odontoagora'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    buildFeatures { buildConfig true }
+    buildTypes {
+        debug { buildConfigField 'String', 'API_URL', '"http://10.0.2.2:8080"' }
+        release { buildConfigField 'String', 'API_URL', '"https://api.example.invalid"' }
+    }
+    lint { abortOnError true; disable 'HardcodedText', 'SetTextI18n' }
+}

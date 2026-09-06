@@ -1,0 +1,21 @@
+<resources>
+    <item type="id" name="input_name" />
+    <item type="id" name="input_email" />
+    <item type="id" name="input_password" />
+    <item type="id" name="input_city" />
+    <item type="id" name="input_clinic" />
+    <item type="id" name="input_address" />
+    <item type="id" name="input_cro" />
+    <item type="id" name="symptoms" />
+    <item type="id" name="pain" />
+    <item type="id" name="swelling" />
+    <item type="id" name="bleeding" />
+    <item type="id" name="triage_city" />
+    <item type="id" name="description" />
+    <item type="id" name="outcome" />
+    <item type="id" name="return_days" />
+    <item type="id" name="symptom_tooth" />
+    <item type="id" name="symptom_broken" />
+    <item type="id" name="symptom_blood" />
+    <item type="id" name="symptom_swelling" />
+</resources>

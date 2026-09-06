@@ -1,0 +1,16 @@
+.gradle/
+.idea/
+**/build/
+local.properties
+*.iml
+*.db
+*.db-shm
+*.db-wal
+__pycache__/
+*.log
+.env
+.venv/
+*.jks
+*.keystore
+local-demo.json
+demo-logs/

@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:paddingHorizontal="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <Button android:id="@+id/back" android:layout_width="64dp" android:layout_height="48dp" android:text="Voltar" android:textAllCaps="false" android:textSize="12sp" android:background="@android:color/transparent" />
+        <TextView android:id="@+id/toolbar_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="OdontoAgora" android:textStyle="bold" android:textColor="@color/text" android:textSize="15sp" />
+        <Button android:id="@+id/menu" android:layout_width="70dp" android:layout_height="48dp" android:text="Opções" android:textAllCaps="false" android:textSize="12sp" android:background="@android:color/transparent" />
+    </LinearLayout>
+    <ProgressBar android:id="@+id/loading" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="3dp" android:indeterminate="true" android:visibility="gone" />
+    <TextView android:id="@+id/error" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textSize="14sp" android:textColor="@color/danger" android:accessibilityLiveRegion="polite" android:visibility="gone" />
+    <ScrollView android:id="@+id/scroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingTop="12dp" android:paddingBottom="32dp" />
+    </ScrollView>
+</LinearLayout>
