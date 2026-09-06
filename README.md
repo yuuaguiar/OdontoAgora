@@ -103,4 +103,4 @@ O cadastro de dentistas é demonstrativo e não representa credenciamento. A var
 - [Compatibilidade do Android Gradle Plugin 9.3](https://developer.android.com/build/releases/agp-9-3-0-release-notes).
 - [Rede do Android Emulator](https://developer.android.com/studio/run/emulator-networking-address).
 
-O logotipo, os ícones de ocorrência e o mapa ilustrativo foram exportados do arquivo Figma fornecido para este projeto. O desenvolvimento contou com assistência de IA e deve ser revisado e estudado pelo estudante para a apresentação.
+O logotipo, os ícones de ocorrência e o mapa ilustrativo foram exportados do arquivo Figma fornecido para este projeto.

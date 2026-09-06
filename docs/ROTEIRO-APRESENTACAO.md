@@ -41,4 +41,4 @@ Explique que o MVP usa dados fictícios, busca por cidade e consulta periódica 
 - **O mapa é real?** A figura é ilustrativa. A busca do MVP usa a cidade informada, e a rota abre em um app de mapas externo.
 - **Já pode atender pacientes reais?** A versão é acadêmica. Uma operação real precisa de validação clínica, credenciamento e infraestrutura de segurança.
 
-O projeto contou com assistência de IA. Revise o código e ensaie o fluxo para conseguir explicar suas escolhas com clareza.
+Revise o código e ensaie o fluxo para conseguir explicar suas escolhas com clareza.

@@ -14,3 +14,5 @@ __pycache__/
 *.keystore
 local-demo.json
 demo-logs/
+current_screen.png
+gradle/gradle-daemon-jvm.properties

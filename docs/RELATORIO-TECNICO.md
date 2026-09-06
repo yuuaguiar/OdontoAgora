@@ -133,7 +133,7 @@ A interface gráfica foi construída para refletir com rigor o protótipo aprova
 |                        |  |                        |  |                        |
 |  [ Sou paciente ]      |  |  NÍVEL DA DOR: 8 / 10  |  |  [✓] Chamado enviado   |
 |  [ Sou dentista ]      |  |  [=======O==]          |  |  [✓] Profissionais OK  |
-|                        |  |                        |  |  [⏳] Aguardando aceite|
+|                        |  |                        |  |  Aguardando aceite    |
 |  Em sinais graves,     |  |  [ Buscar atendimento ]|  |                        |
 |  procure o hospital.   |  |                        |  |  [ Cancelar chamado ]   |
 +------------------------+  +------------------------+  +------------------------+

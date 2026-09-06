@@ -1,8 +1,50 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
-    <application android:label="OdontoAgora" android:theme="@style/Theme.OdontoAgora" android:allowBackup="false" android:dataExtractionRules="@xml/data_extraction_rules" android:supportsRtl="true" android:usesCleartextTraffic="false" android:icon="@drawable/tooth">
-        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
-            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+    <application
+        android:label="OdontoAgora"
+        android:theme="@style/Theme.OdontoAgora"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="false"
+        android:icon="@drawable/tooth">
+
+        <!-- Tela 1: Boas-vindas -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
+        <!-- Tela 2: Triagem ("O que aconteceu?") -->
+        <activity
+            android:name=".TriageActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Tela 3: Em Busca (Radar e Fila) -->
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+
+        <!-- Tela 4: Tela do Dentista (Aceite do Chamado) -->
+        <activity
+            android:name=".DentistActivity"
+            android:exported="false" />
+
+        <!-- Tela 5: Dentista Encontrado (45 min) -->
+        <activity
+            android:name=".ConfirmedActivity"
+            android:exported="false" />
+
+        <!-- Tela 6: Atendimento Concluído & Avaliação -->
+        <activity
+            android:name=".CompletedActivity"
+            android:exported="false" />
+
     </application>
 </manifest>

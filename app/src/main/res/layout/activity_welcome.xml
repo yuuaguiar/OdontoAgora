@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="36dp">
+
+        <!-- Badge Superior: Atendimento Urgente 24h -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATENDIMENTO URGENTE 24H"
+            android:textColor="@color/brand"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/badge_blue"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Logo OdontoAgora -->
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:contentDescription="Logotipo OdontoAgora"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Slogan Principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quando a dor não\npode esperar."
+            android:textColor="@color/text"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Botão Sou Paciente -->
+        <Button
+            android:id="@+id/btn_sou_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Sou paciente"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Botão Sou Dentista -->
+        <Button
+            android:id="@+id/btn_sou_dentista"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Sou dentista"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/card_background"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Avisos Institucionais -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Em sinais graves, procure um serviço hospitalar."
+            android:textColor="@color/muted"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encontre um dentista disponível sem precisar ligar para várias clínicas."
+            android:textColor="@color/muted"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OdontoAgora • Projeto Acadêmico"
+            android:textColor="#5A6C82"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</ScrollView>

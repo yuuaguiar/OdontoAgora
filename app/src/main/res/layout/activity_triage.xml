@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="36dp">
+
+        <!-- Topo: Voltar e Relatar ocorrência -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_voltar_triagem"
+                android:layout_width="72dp"
+                android:layout_height="40dp"
+                android:text="Voltar"
+                android:textColor="@color/muted"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:background="@android:color/transparent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RELATAR OCORRÊNCIA"
+                android:textColor="@color/muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:background="@drawable/card_background" />
+        </LinearLayout>
+
+        <!-- Título e Subtítulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O que aconteceu?"
+            android:textColor="@color/text"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha a opção mais próxima do que você sente."
+            android:textColor="@color/muted"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 4 Opções de Sintomas em RadioGroup -->
+        <RadioGroup
+            android:id="@+id/rg_sintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rb_dor_intensa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="68dp"
+                android:text="Dor intensa\nLatejante ou impedindo atividades"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/tooth"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:background="@drawable/card_background"
+                android:checked="true"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_dente_quebrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="68dp"
+                android:text="Dente quebrado\nFratura, queda ou restauração solta"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/broken"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_sangramento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="68dp"
+                android:text="Sangramento\nNa gengiva ou após procedimento"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/blood"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_inchaco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="68dp"
+                android:text="Inchaço\nNa gengiva, rosto ou pescoço"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/swelling"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="10dp" />
+        </RadioGroup>
+
+        <!-- Card Nível de Dor -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NÍVEL DA DOR"
+                    android:textColor="@color/muted"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_valor_dor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 / 10"
+                    android:textColor="@color/danger"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seek_dor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:max="10"
+                android:progress="8"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 = sem dor • 10 = dor insuportável"
+                android:textColor="@color/muted"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Inchaço Facial e Sangramento Intenso Lado a Lado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+
+            <LinearLayout
+                android:id="@+id/card_toggle_inchaco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="14dp"
+                android:layout_marginEnd="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INCHAÇO FACIAL"
+                    android:textColor="@color/muted"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_toggle_inchaco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIM"
+                    android:textColor="@color/danger"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_toggle_sangramento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="14dp"
+                android:layout_marginStart="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SANGRAMENTO"
+                    android:textColor="@color/muted"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_toggle_sangramento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NÃO"
+                    android:textColor="@color/muted"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Cidade -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EM QUAL CIDADE VOCÊ ESTÁ?"
+            android:textColor="@color/muted"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/et_cidade"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Joaçaba"
+            android:textColor="@color/text"
+            android:textSize="15sp"
+            android:paddingHorizontal="14dp"
+            android:background="@drawable/card_background"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Estes dados ajudam o dentista a prestar socorro com segurança."
+            android:textColor="@color/muted"
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botão Buscar Atendimento Agora -->
+        <Button
+            android:id="@+id/btn_buscar_atendimento"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Buscar atendimento agora"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+</ScrollView>
